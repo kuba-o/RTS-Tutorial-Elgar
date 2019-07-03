@@ -1,10 +1,11 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using RTS;
 
 public class Hud : MonoBehaviour
 {
-    public GUISkin resourceSkin, ordersSkin;
+    public GUISkin resourceSkin, ordersSkin, selectBoxSkin;
     private const int ORDERS_BAR_WIDTH = 150, RESOURCE_BAR_HEIGHT = 40;
     private const int SELECTION_NAME_HEIGHT = 15;
 
@@ -13,7 +14,8 @@ public class Hud : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-    player = transform.root.GetComponent<Player>();
+        player = transform.root.GetComponent<Player>();
+        ResourceManager.StoreSelectBoxItems(selectBoxSkin);
 
     }
 
@@ -62,5 +64,10 @@ public class Hud : MonoBehaviour
         bool insideWidth = mousePos.x >= 0 && mousePos.x <= Screen.width - ORDERS_BAR_WIDTH;
         bool insideHeight = mousePos.y >= 0 && mousePos.y <= Screen.height - RESOURCE_BAR_HEIGHT;
         return insideWidth && insideHeight;
+    }
+
+    public Rect GetPlayingArea()
+    {
+        return new Rect(0, RESOURCE_BAR_HEIGHT, Screen.width - ORDERS_BAR_WIDTH, Screen.height - RESOURCE_BAR_HEIGHT);
     }
 }
