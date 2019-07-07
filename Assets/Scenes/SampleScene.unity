@@ -180,6 +180,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 449790137}
+  - {fileID: 1935732314}
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -329,9 +330,15 @@ MonoBehaviour:
   rightCursor: {fileID: 2800000, guid: cc6e74ffb905eb34795078cde1ecc5a7, type: 3}
   upCursor: {fileID: 2800000, guid: 11ff7a077a7ac0a4aad1e668fc3f75a9, type: 3}
   downCursor: {fileID: 2800000, guid: f0a1310229d4b9b43aeecc69c4801a23, type: 3}
-  moveCursors: []
-  attackCursors: []
-  harvestCursors: []
+  moveCursors:
+  - {fileID: 2800000, guid: b38ad72f86b2efc478ce3742d2f3e5da, type: 3}
+  - {fileID: 2800000, guid: 4833d317c09f1d44b849a28a11527b4b, type: 3}
+  attackCursors:
+  - {fileID: 2800000, guid: 958a399538383304d8d399ec3c5b43c1, type: 3}
+  - {fileID: 2800000, guid: 0b8f19ede72b62c44a4f6bd855e76b39, type: 3}
+  harvestCursors:
+  - {fileID: 2800000, guid: 977f29d65a8b75d4387d3ebc8ea8a916, type: 3}
+  - {fileID: 2800000, guid: 8e900853f41c6a14d88f0552e5258722, type: 3}
   mouseCursorSkin: {fileID: 11400000, guid: 36c2bb7de26ccb642b499cecb1846f5c, type: 2}
 --- !u!1 &505646526
 GameObject:
@@ -1430,6 +1437,8 @@ MonoBehaviour:
   sellValue: 0
   hitPoints: 0
   maxHitPoints: 0
+  moveSpeed: 2
+  rotateSpeed: 1.5
 --- !u!4 &1935732314
 Transform:
   m_ObjectHideFlags: 0
@@ -1437,7 +1446,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1935732312}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -1446,6 +1455,6 @@ Transform:
   - {fileID: 343235638}
   - {fileID: 991825758}
   - {fileID: 1200900473}
-  m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_Father: {fileID: 209084593}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
