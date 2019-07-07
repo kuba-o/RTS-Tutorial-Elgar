@@ -3,7 +3,16 @@ guid: c6af3d4aa6d441646a17d1f713a2f3b6
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - resourceSkin: {instanceID: 0}
+  - ordersSkin: {instanceID: 0}
+  - selectBoxSkin: {instanceID: 0}
+  - activeCursor: {instanceID: 0}
+  - selectCursor: {instanceID: 0}
+  - leftCursor: {instanceID: 0}
+  - rightCursor: {instanceID: 0}
+  - upCursor: {instanceID: 0}
+  - downCursor: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
