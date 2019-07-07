@@ -153,6 +153,10 @@ MonoBehaviour:
   username: 
   isHuman: 1
   hud: {fileID: 0}
+  startMoney: 50
+  startMoneyLimit: 1000
+  startPower: 15
+  startPowerLimit: 750
 --- !u!114 &209084592
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -340,6 +344,9 @@ MonoBehaviour:
   - {fileID: 2800000, guid: 977f29d65a8b75d4387d3ebc8ea8a916, type: 3}
   - {fileID: 2800000, guid: 8e900853f41c6a14d88f0552e5258722, type: 3}
   mouseCursorSkin: {fileID: 11400000, guid: 36c2bb7de26ccb642b499cecb1846f5c, type: 2}
+  resources:
+  - {fileID: 2800000, guid: e5229e3185f7b5241ba882ba9a0ed219, type: 3}
+  - {fileID: 2800000, guid: 1b874ae69097ada4abc1a27834221692, type: 3}
 --- !u!1 &505646526
 GameObject:
   m_ObjectHideFlags: 0
